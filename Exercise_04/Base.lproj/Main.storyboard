@@ -32,7 +32,7 @@
                                 </constraints>
                                 <state key="normal" title="+1"/>
                                 <connections>
-                                    <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kry-3s-jWL"/>
+                                    <action selector="countUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kry-3s-jWL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXi-Gg-9hn">
@@ -67,6 +67,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+        <!--Another Screen View Controller-->
+        <scene sceneID="9j2-g7-Tv2">
+            <objects>
+                <viewController id="xiO-bX-T80" customClass="AnotherScreenViewController" customModule="Exercise_04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuz-Xg-OX9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z7F-GY-iFa"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOU-LI-gbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="124"/>
         </scene>
     </scenes>
 </document>

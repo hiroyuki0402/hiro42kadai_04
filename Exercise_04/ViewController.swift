@@ -8,25 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var resultLabel: UILabel!
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet private var resultLabel: UILabel!
+    private var count = 0
+
+    @IBAction private func countUpButton(_ sender: Any) {
+        count += 1
+        resultLabel.text = String(count)
     }
 
-    @IBAction func plusButton(_ sender: Any) {
-        let num = Int(resultLabel.text!) ?? 0
-        let resultNum =  num + 1
-        resultLabel.text = String(resultNum)
-    }
-    @IBAction func clearButton(_ sender: Any) {
+    @IBAction private func clearButton(_ sender: Any) {
+        count = 0
         resultLabel.text = "0"
     }
-    
 }
-
