@@ -18,6 +18,11 @@ class ViewController: UIViewController {
 
     @IBAction private func clearButton(_ sender: Any) {
         count = 0
-        resultLabel.text = "0"
+        updateLabel()
+    }
+
+    private func updateLabel() {
+        resultLabel.text = String(count)
     }
 }
+
